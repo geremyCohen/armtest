@@ -1,0 +1,10 @@
+name: Example workflow
+on:
+  workflow_dispatch:
+jobs:
+  example-job:
+    name: Example Job
+    runs-on: ubuntu-22.04-arm-os # Custom ARM64 runner
+    steps:
+      - name: Example step
+        run: echo "This line runs on Arm!"
